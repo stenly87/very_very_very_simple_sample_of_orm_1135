@@ -21,6 +21,7 @@ namespace ConsoleApp47
 
         public static Singer GetSingerByID(this DataBase database, int id)
         {
+            //
             return MysqlTools.SelectRowFromTable<Singer>(id);
         }
     }
